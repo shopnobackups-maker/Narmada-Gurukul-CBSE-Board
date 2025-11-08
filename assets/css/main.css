@@ -1380,7 +1380,15 @@ input[type=color] {
   filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.1));
   animation: fadeInLogo 1.5s ease-in-out infinite alternate;
 }
-
+@media (max-width:425px) {
+  .loader-logo img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.1));
+  animation: fadeInLogo 1.5s ease-in-out infinite alternate;
+}
+}
 @keyframes fadeInLogo {
   from {  transform: scale(0.97); }
   to {  transform: scale(1.03); }
@@ -1692,7 +1700,7 @@ body.loaded #preloader {
 .itoffcanvas__info-icon a {
   height: 50px;
   width: 50px;
-  background-color: var(--it-theme-1);
+  background-color: var(--it-common-red);
   color: var(--it-common-white);
   display: inline-block;
   text-align: center;
@@ -11768,7 +11776,7 @@ body.loaded #preloader {
   padding-right: 20px;
 }
 .it-menu-mobile ul li:hover > a {
-  color: var(--it-theme-1);
+  color: var(--it-common-red);
 }
 .it-menu-mobile ul li:hover > a::after {
   color: var(--it-theme-1);
@@ -11886,7 +11894,7 @@ body.loaded #preloader {
   margin-right: 7px;
 }
 .it-footer-social a:hover {
-  background-color: var(--it-theme-1);
+  background-color: var(--it-common-red);
   color: var(--it-common-white);
 }
 .it-footer-title {
