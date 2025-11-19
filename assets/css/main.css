@@ -6951,10 +6951,13 @@ body.loaded #preloader {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
 }
 .it-event-style-3 .it-event-2-title a:hover {
-  color: var(--it-theme-1);
+  color: var(--it-theme-4);
 }
 .it-event-style-3 .it-event-2-content {
   padding: 18px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  height: 280px;
+
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-event-style-3 .it-event-2-content {
