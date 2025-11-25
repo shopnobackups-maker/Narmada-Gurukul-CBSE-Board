@@ -79,6 +79,11 @@
     max-width: 1350px;
   }
 }
+@media (min-width: 1900px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1650px;
+  }
+}
 .container-1380 {
   max-width: 1380px;
 }
@@ -2723,7 +2728,7 @@ body.loaded #preloader {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 260px;
+  width: 275px;
   text-align: left;
   padding: 30px;
   opacity: 0;
@@ -2800,7 +2805,7 @@ body.loaded #preloader {
   font-weight: 700;
 }
 .it-header-2-button {
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .it-header-2-button {
