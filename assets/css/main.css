@@ -4369,6 +4369,12 @@ body.loaded #preloader {
     font-size: 14px;
   }
 }
+.it-header-height{
+  height: 150px;
+}
+.it-header-wrap{
+  padding: 10px 0px;
+}
 .it-course-sidebar-rate span.rate {
   color: var(--it-common-black);
   font-size: 21px;
