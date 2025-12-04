@@ -2695,7 +2695,7 @@ body.loaded #preloader {
 .it-header-2-main-menu ul li {
   list-style-type: none;
   display: inline-block;
-  margin: 0 19px;
+  margin: 0 15px;
   position: relative;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -2907,7 +2907,7 @@ body.loaded #preloader {
 }
 
 .it-header-2-top-style {
-  padding: 11px 0;
+  /* padding: 6px 0; */
 }
 .it-header-2-top-style .it-header-2-top-left ul li {
   position: relative;
@@ -4373,7 +4373,16 @@ body.loaded #preloader {
   }
 }
 .it-header-height{
-  height: 150px;
+  height:100%;
+}
+@media (max-width:1024px) {
+  .it-header-height{
+  height: 100%;
+}
+
+.it-btn-white.sky-bg{
+  display: none !important;
+}
 }
 .it-header-wrap{
   padding: 10px 0px;
