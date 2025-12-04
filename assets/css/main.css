@@ -16848,3 +16848,80 @@ figure.side-img img {
   margin-top: 20px;
   font-weight: 400;
 }
+
+.default-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.default-section .column {
+    position: relative;
+}
+
+.default-section .text-column .text p {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.default-section .text-column .text p:last-child {
+    margin-bottom: 0px;
+}
+
+.default-section .text-column .text strong {
+    color: #222222;
+    font-weight: 600;
+}
+
+.default-section .text-column .text strong {
+    color: #222222;
+}
+
+.auto-container {
+    position: static;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.genral-table .table > thead > tr > th {
+    background: #6b0f10 !important;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ====================================================================
+	Parallax Section Style
+====================================================================
+
+***/
+
+.parallax-section {
+    position: relative;
+    padding: 120px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.parallax-section::before {
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.parallax-section .auto-container {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-section h2 {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+/***
