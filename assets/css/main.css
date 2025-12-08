@@ -2784,7 +2784,7 @@ body.loaded #preloader {
   visibility: hidden;
 }
 .it-header-2-main-menu ul li > .submenu > li > a:hover {
-  padding-left: 25px;
+  padding-left: 0px;
 }
 .it-header-2-main-menu ul li > .submenu > li > a:hover::before {
   width: 20px;
@@ -11789,7 +11789,49 @@ body.loaded #preloader {
 .it-header-5-style .it-header-2-main-menu ul li.active.has-dropdown::after {
   color: var(--it-common-yellow);
 }
+.has-dropdown {
+    position: relative;
+}
 
+.it-submenu {
+    display: none; /* hide by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #000; /* your theme */
+    padding: 10px 0;
+    min-width: 240px;
+    z-index: 999;
+}
+
+.has-dropdown:hover > .it-submenu {
+    display: block; /* show only on hover */
+}
+/* Arrow default (downwards) */
+.dropdown-arrow {
+    position: relative;
+    padding-right: 18px;
+}
+
+.dropdown-arrow .arrow {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+
+    transform: translateY(-50%) rotate(45deg);   /* ↓ arrow */
+    transition: 0.3s ease;
+}
+
+/* Hover — arrow points UP */
+.has-dropdown:hover .arrow {
+    transform: translateY(-50%) rotate(-135deg); /* ↑ arrow */
+}
 /*----------------------------------------*/
 /*  16. footer css start
 /*----------------------------------------*/
