@@ -3454,8 +3454,12 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .it-header-1-style .it-header-2-bar button {
   color: var(--it-common-white);
   background-color: var(--it-theme-4);
+  border-radius: 5px;
+  padding: 10px ;
 }
-
+.it-menu-bar i{
+  font-size: 20px;
+}
 .header-sticky {
   position: fixed;
   top: 0;
