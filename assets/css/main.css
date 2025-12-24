@@ -17368,7 +17368,7 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
             }
 
             &>.last-childs-3 {
-              right: -255%;
+              right: -225%;
               bottom: 94%;
 
               &::after {
@@ -17933,7 +17933,7 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
               }
 
               &>.last-childs-3 {
-                left: -194% !important;
+                left: -210% !important;
               }
 
               &>.last-childs-4 {
@@ -17945,19 +17945,19 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
           &>.chield-4 {
             .child-body {
               &>.last-childs-1 {
-                left: -299% !important;
+                left: -325% !important;
               }
 
               &>.last-childs-2 {
-                left: -164% !important;
+                left: -200% !important;
               }
 
               &>.last-childs-3 {
-                left: -205% !important;
+                left: -250% !important;
               }
 
               &>.last-childs-4 {
-                left: -165% !important;
+                left: -200% !important;
               }
             }
           }
@@ -17965,11 +17965,11 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
           &>.chield-5 {
             .child-body {
               &>.last-childs-2 {
-                left: -200% !important;
+                left: -240% !important;
               }
 
               &>.last-childs-1 {
-                left: -190% !important;
+                left: -225% !important;
               }
             }
           }
