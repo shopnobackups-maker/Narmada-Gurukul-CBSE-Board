@@ -13808,7 +13808,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
   visibility: hidden;
   transition: 0.4s;
 }
-
+.r-profile-name{
+  font-size: 18px;
+  color: #000;
+}
 .home-img-thumb {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -16662,7 +16665,29 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
   /* Ensures button stays on top of image */
   box-shadow: 0 0 15px rgba(217, 0, 0, 0.5);
 }
-
+.youtube .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  background: rgba(217, 0, 0, 0.95);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  z-index: 3;
+  /* Ensures button stays on top of image */
+  box-shadow: 0 0 15px rgba(217, 0, 0, 0.5);
+}
+.youtube .play-button::after {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 21px;
+  border-style: solid;
+  border-width: 14px 0 14px 22px;
+  border-color: transparent transparent transparent #fff;
+}
 /* Triangle inside the button */
 .youtube-1 .play-button::after {
   content: '';
@@ -16673,7 +16698,10 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
   border-width: 14px 0 14px 22px;
   border-color: transparent transparent transparent #fff;
 }
-
+.youtube:hover img {
+  transform: scale(1.08);
+  filter: brightness(80%);
+}
 /* Hover Animation */
 .youtube-1:hover img {
   transform: scale(1.08);
