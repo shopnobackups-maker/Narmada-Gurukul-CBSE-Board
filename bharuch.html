@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -298,26 +302,7 @@
 
     </header>
     <!-- breadcrumb-area-start -->
-    <div class="it-breadcrumb-area it-breadcrumb-bg" data-background="assets/img/breadcrumb/breadcrumb.jpg">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-12">
-                    <div class="it-breadcrumb-content z-index-3 text-center">
-                        <div class="it-breadcrumb-title-box">
-                            <h3 class="it-breadcrumb-title">Bharuch</h3>
-                        </div>
-                        <div class="it-breadcrumb-list-wrap">
-                            <div class="it-breadcrumb-list">
-                                <span><a href="index.html">home</a></span>
-                                <span class="dvdr">//</span>
-                                <span>Bharuch</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- breadcrumb-area-end -->
     <!-- <div id="main-container" class="academics-inner">
         <main class="navbar-space-remove">
@@ -376,53 +361,77 @@
         </main>
     </div> -->
     <div id="main-container" class="academics-inner">
-        <div id="homeBannerSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <section class="banner-section" style="background-image:url('assets/img/branch/1920-x-1080.webp')">
-                        <div class="banner-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-10 banner-inner">
-                                        <h2 class="h1-common">
-                                            One of the Best School in Bangalore
-                                        </h2>
+   <div id="homeBannerSlider"
+     class="carousel slide carousel-fade"
+     data-bs-ride="carousel"
+     data-bs-interval="5000"
+     data-bs-pause="false">
 
-                                        <a href="/admissions/" class="TFArrow">
-                                            Admissions Open
-                                            <i class="bi bi-arrow-right-short"></i>
-                                        </a>
-                                    </div>
-                                </div>
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeBannerSlider" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#homeBannerSlider" data-bs-slide-to="1"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <section class="banner-section"
+                style="background-image:url('assets/img/branch/1920-x-1080.webp')">
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 banner-inner">
+                                <h2 class="h1-common">
+                                    One of the Best School in Bangalore
+                                </h2>
+
+                                <a href="/admissions/" class="TFArrow1">
+                                    Admissions Open
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </a>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <section class="banner-section" style="background-image:url('assets/img/branch/WhatsApp-Image-2025-04-09-at-11.57.49-AM.jpeg')">
-                        <div class="banner-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-10 banner-inner">
-                                        <h2 class="h1-common">XII Board Results 2024–25</h2>
-
-                                        <a href="/admissions/" class="TFArrow">
-                                            Admissions Open
-                                            <i class="bi bi-arrow-right-short"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-            </div>
-
+            </section>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <section class="banner-section"
+                style="background-image:url('assets/img/branch/WhatsApp-Image-2025-04-09-at-11.57.49-AM.jpeg')">
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 banner-inner">
+                                <h2 class="h1-common">
+                                    XII Board Results 2024–25
+                                </h2>
+
+                                <a href="/admissions/" class="TFArrow1">
+                                    Admissions Open
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#homeBannerSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#homeBannerSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
 
         <div class="modal fade" id="VideoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="VideoModalLabel" aria-hidden="true">
@@ -443,12 +452,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-titel col-12 mb-4">
-                            <h2 class="h2-common"></h2>
-                            <h1>Shree Swaminarayan Gurukul International School Bangalore</h1>
+                            <h2 class="h2-common text-black"></h2>
+                            <h1  class="text-black">Shree Swaminarayan Gurukul International School Bangalore</h1>
                             <p> At our residential campus, we have built homes for our children where we devote our
                                 full-time providing care and protection fulfil their emotional needs thus making
                                 them feel at home. </p>
-                            <h2>Discover Holistic and Value-Based Education for Your Child Today</h2><p> Are you
+                            <h2 class="text-black">Discover Holistic and Value-Based Education for Your Child Today</h2><p> Are you
                             looking for the best school in Bangalore? Look no further! We offer a unique combination
                             of holistic learning that enables the mind and spirit to develop at our residential
                             campus. Our campus spans about 17 acres, providing students with a peaceful environment
@@ -462,9 +471,9 @@
                             reach their highest possibility. </p>
                         </div>
                         <div class="col-12">
-                            <div class="youtube youtube-video" data-embed="yOMsIGK1GGM">
-                                <div class="play-button"></div><img decoding="async" src="images/sddefault.jpg"
-                                    alt="Sddefault" title="Sddefault, Bangalore"><img src="images/sddefault.jpg">
+                            <div class="youtube-1 youtube-video" data-embed="yOMsIGK1GGM">
+                                <div class="play-button"></div><img decoding="async" src="assets/img/branch/sddefault.jpg"
+                                    alt="Sddefault" title="Sddefault, Bangalore"><img src="https://img.youtube.com/vi/yOMsIGK1GGM/sddefault.jpg">
                             </div>
                         </div>
                     </div>
@@ -546,7 +555,7 @@
         <div id="main-container" class="awarded-as-best-residential-school-of-india">
             <section class="py-0">
                 <img decoding="async" src="assets/img/branch/BLR_Image.jpeg" alt="Blr Image" class="img-fluid gurukul-images w-100"
-                    title="Blr Image, Bangalore">
+                    title="Bharuch">
             </section>
             <section class="best-resi-part-second-banner-dtl-txt">
                 <div class="container pb-5">
@@ -671,7 +680,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius: 10px;"
                                         src="assets/img/branch/1T3A6565-Small.jpg" alt="1T3A6565 Small"
                                         title="1T3A6565 Small, Bangalore"></div>
                                 <div class="blog-content">
@@ -684,7 +693,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius:10px;"
                                         src="assets/img/branch/mineral-water-bottling-plant-Small.jpg"
                                         alt="Mineral Water Bottling Plant Small"
                                         title="Mineral Water Bottling Plant Small, Bangalore"></div>
@@ -700,7 +709,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius:10px;"
                                         src="assets/img/branch/Screenshot-2024-02-21-235415-Small.png"
                                         alt="Screenshot 2024 02 21 235415 Small"
                                         title="Screenshot 2024 02 21 235415 Small, Bangalore"></div>
@@ -718,7 +727,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius:10px;"
                                         src="assets/img/branch/Pooja-BLR-Square-Photo.png" alt="Pooja Blr Square Photo"
                                         title="Pooja Blr Square Photo, Bangalore"></div>
                                 <div class="blog-content">
@@ -733,7 +742,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius:10px;"
                                         src="assets/img/branch/Evening-Assembly-BLR-Landscape-Photo.png"
                                         alt="Evening Assembly Blr Landscape Photo"
                                         title="Evening Assembly Blr Landscape Photo, Bangalore"></div>
@@ -747,7 +756,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius:10px;"
                                         src="assets/img/branch/061-min-scaled.jpg" alt="061 Min Scaled"
                                         title="061 Min Scaled, Bangalore"></div>
                                 <div class="blog-content">
@@ -760,7 +769,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius:10px;"
                                         src="assets/img/branch/Students-with-saints.jpg" alt="Students With Saints"
                                         title="Students With Saints, Bangalore"></div>
                                 <div class="blog-content">
@@ -776,7 +785,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius:10px;"
                                         src="assets/img/branch/class.png" alt="Class" title="Class, Bangalore"></div>
                                 <div class="blog-content">
                                     <h4 class="h4-common">Study Hours</h4>
@@ -788,7 +797,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius:10px;"
                                         src="assets/img/branch/students-with-laptop.png" alt="Students With Laptop"
                                         title="Students With Laptop, Bangalore"></div>
                                 <div class="blog-content">
@@ -801,7 +810,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top; border-radius:10px;"
                                         src="assets/img/branch/EXAM.jpg" alt="Exam" title="Exam, Bangalore"></div>
                                 <div class="blog-content">
                                     <h4 class="h4-common">Weekly Exams</h4>
@@ -813,7 +822,7 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="blog-item">
                                 <div class="blog-thamanil w-100"> <img decoding="async"
-                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;"
+                                        style="min-height: 305px;min-width: 100%;max-height: 305px ;object-fit: cover; object-position: top;  border-radius:10px;"
                                         src="assets/img/branch/IMG_1697-Small.jpg" alt="Img 1697 Small"
                                         title="Img 1697 Small, Bangalore"></div>
                                 <div class="blog-content">
@@ -1075,8 +1084,8 @@
                                     href="tel:+91 98451 95000" class="phone1">+91 98451 95000</a><br><a
                                     href="tel:+91 98458 95000" class="phone2">+91 98458 95000</a></p>
                             <p class="TFArrow text-sm-center text-lg-start">Mail Us on: <a
-                                    href="mailto:bangalore@gurukul.org"
-                                    class="TFArrow FormMail_id">bangalore@gurukul.org</a> </p>
+                                    href="mailto:Bharuch@gurukul.org"
+                                    class="TFArrow FormMail_id">Bharuch@gurukul.org</a> </p>
                         </div>
                         <div class="col-lg-5">
                             <div class="booking-inner">
@@ -1237,7 +1246,7 @@
             </div>
             <div class="section-border"></div>
         </section>
-        <section class="pb-3" style="background-color :#FFFFFF">
+        <!-- <section class="pb-3" style="background-color :#FFFFFF">
             <div class="container pb-5">
                 <div class="section-titel col-lg-10 mb-5">
                     <h2 class="h2-common">Parents, Students, Teachers Testimonials</h2>
@@ -1249,8 +1258,8 @@
                         <div class="row justify-content-sm-center justify-content-lg-between">
                             <div class="col-lg-4 col-md-6">
                                 <div class="youtube" data-embed="sAV5ZKBkImw">
-                                    <div class="play-button"></div><img decoding="async" src="images/sddefault_2.jpg"
-                                        alt="Sddefault" title="Sddefault, Bangalore"><img src="images/sddefault_2.jpg">
+                                    <div class="play-button"></div><img decoding="async" src="assets/img/branch/sddefault_2.jpg"
+                                        alt="Sddefault" title="Sddefault, Bangalore"><img src="assets/img/branch/sddefault_2.jpg">
                                 </div>
                                 <h4 class="h4-common" style="font-size: 26px;">
                                     Mr. Subramaniam father of Hariharan </h4>
@@ -1259,8 +1268,8 @@
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="youtube" data-embed="pLiWTJnERMU">
-                                    <div class="play-button"></div><img decoding="async" src="images/sddefault_1.jpg"
-                                        alt="Sddefault" title="Sddefault, Bangalore"><img src="images/sddefault_1.jpg">
+                                    <div class="play-button"></div><img decoding="async" src="assets/img/branch/sddefault_1.jpg"
+                                        alt="Sddefault" title="Sddefault, Bangalore"><img src="assets/img/branch/sddefault_1.jpg">
                                 </div>
                                 <h4 class="h4-common" style="font-size: 26px;">
                                     Vighnesh Mohota | Alumni </h4>
@@ -1269,8 +1278,8 @@
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="youtube" data-embed="t-G0lIZ1UGE">
-                                    <div class="play-button"></div><img decoding="async" src="images/sddefault_3.jpg"
-                                        alt="Sddefault" title="Sddefault, Bangalore"><img src="images/sddefault_3.jpg">
+                                    <div class="play-button"></div><img decoding="async" src="assets/img/branch/sddefault_3.jpg"
+                                        alt="Sddefault" title="Sddefault, Bangalore"><img src="assets/img/branch/sddefault_3.jpg">
                                 </div>
                                 <h4 class="h4-common" style="font-size: 26px;">
                                     Yash Bharati | Student </h4>
@@ -1281,39 +1290,70 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <script>(function () {
-                var youtube = document.querySelectorAll(".youtube");
-                for (var i = 0; i < youtube.length; i++) {
-                    var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/sddefault.jpg";
-                    var image = new Image();
-                    image.src = source;
-                    image.addEventListener("load", function () {
-                        youtube[i].appendChild(image);
-                    }(i));
-                    youtube[i].addEventListener("click", function () {
-                        var iframe = document.createElement("iframe");
-                        iframe.setAttribute("frameborder", "0");
-                        iframe.setAttribute("allowfullscreen", "");
-                        iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed +
-                            "?rel=0&showinfo=0&autoplay=1");
-                        this.innerHTML = "";
-                        this.appendChild(iframe);
-                    });
-                };
-            })();</script>
-        <section class="reviews-section light-bg position-relative bg-white">
+        </section> -->
+      <!-- ================= Parents, Students, Teachers Reviews ================= -->
+      <section class="testimonial-section pb-5" style="background-color:#ffffff;">
+         <div class="container pb-5">
+            <div class="section-titel col-lg-10 mb-5 text-center mx-auto">
+               <h2 class="h2-common">Parents, Students, Teachers Testimonials</h2>
+               <p>
+                  An esteemed collection of heartfelt testimonials from parents, students, and dignitaries,
+                  showcasing the transformative impact and excellence of our institution.
+               </p>
+            </div>
+
+            <div class="gallery-video row justify-content-center">
+               <!-- Video 1 -->
+               <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="youtube" data-embed="u0v_Mmy-i5U">
+                     <div class="play-button"></div>
+                     <img src="assets/img/branch/sddefault_2.jpg" alt="Rajesh Patel Testimonial">
+                  </div>
+                       <h4 class="h4-common" style="font-size: 26px;">
+                                    Mr. Subramaniam father of Hariharan </h4>
+                                <p style="font-size: 16px; text-align: start;">
+                                    Tech Mahindra Ltd. Associate Manager </p>
+               </div>
+
+               <!-- Video 2 -->
+               <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="youtube" data-embed="pLiWTJnERMU">
+                     <div class="play-button"></div>
+                     <img src="assets/img/branch/sddefault_1.jpg" alt="Vighnesh Mohota Testimonial">
+                  </div>
+                 <h4 class="h4-common" style="font-size: 26px;">
+                                    Vighnesh Mohota | Alumni </h4>
+                                <p style="font-size: 16px; text-align: start;">
+                                    India’s Youngest Book Author </p>
+               </div>
+
+               <!-- Video 3 -->
+               <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="youtube" data-embed="V8rOXMtmWS0">
+                     <div class="play-button"></div>
+                     <img src="assets/img/branch/sddefault_3.jpg" alt="Darshan Jain Testimonial">
+                  </div>
+                   <h4 class="h4-common" style="font-size: 26px; text-align: start;">
+                                    Yash Bharati | Student </h4>
+                                <p style="font-size: 16px;">
+                                </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Parents, Students, Teachers Reviews -->
+        <section class="reviews-section light-bg position-relative">
             <div class="container pb-5">
                 <div class="section-titel col-lg-10 mb-5">
                     <h2 class="h2-common">Parents, Students, Teachers Reviews</h2>
                     <p>An esteemed collection of heartfelt testimonials from parents, students, and dignitaries,
                         showcasing the transformative impact and excellence of our institution.</p>
                 </div>
-                <div class="reviews-slider row">
-                    <div class="item col-md-6 col-sm-6 col-lg-4">
+                <div class="reviews-slider owl-carousel">
+                    <div class="item col-md-6 col-sm-6 col-lg-12">
                         <div class="reviews-inner">
                             <div class="reviews-content"> <img decoding="async"
-                                    src="images/parent-student-teacher-review-quote-icon.svg"
+                                    src="assets/img/branch/parent-student-teacher-review-quote-icon.svg"
                                     alt="Parent Student Teacher Review Quote Icon"
                                     title="Parent Student Teacher Review Quote Icon, Bangalore">
                                 <p>The management is good and it is contributing in a positive way to teachers,
@@ -1322,7 +1362,7 @@
                                     of the students.</p>
                             </div>
                             <div class="reviews-profile">
-                                <div class="r-profile-img"> <img decoding="async" src="images/barath-parchani.gif"
+                                <div class="r-profile-img"> <img decoding="async" src="assets/img/branch/barath-parchani.gif"
                                         alt="Reviews" title="Barath Parchani, Bangalore"></div>
                                 <div class="r-profile-info">
                                     <p class="r-profile-name text-left">Mr. Bharat Parchani</p>
@@ -1331,10 +1371,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item col-md-6 col-sm-6 col-lg-4">
+                    <div class="item col-md-6 col-sm-6 col-lg-12">
                         <div class="reviews-inner">
                             <div class="reviews-content"> <img decoding="async"
-                                    src="images/parent-student-teacher-review-quote-icon.svg"
+                                    src="assets/img/branch/parent-student-teacher-review-quote-icon.svg"
                                     alt="Parent Student Teacher Review Quote Icon"
                                     title="Parent Student Teacher Review Quote Icon, Bangalore">
                                 <p>I Started my Journey from Gurukul where the seeds of Growth and development has
@@ -1344,7 +1384,7 @@
                             </div>
                             <div class="reviews-profile">
                                 <div class="r-profile-img"> <img decoding="async"
-                                        src="images/darshak-bhatt-testimonial-video-text-thumbline.jpg" alt="Reviews"
+                                        src="assets/img/branch/darshak-bhatt-testimonial-video-text-thumbline.jpg" alt="Reviews"
                                         title="Darshak Bhatt Testimonial Video Text Thumbline, Bangalore"></div>
                                 <div class="r-profile-info">
                                     <p class="r-profile-name text-left">Darshak Bhatt | A Gurukulite</p>
@@ -1353,10 +1393,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item col-md-6 col-sm-6 col-lg-4">
+                    <div class="item col-md-6 col-sm-6 col-lg-12">
                         <div class="reviews-inner">
                             <div class="reviews-content"> <img decoding="async"
-                                    src="images/parent-student-teacher-review-quote-icon.svg"
+                                    src="assets/img/branch/parent-student-teacher-review-quote-icon.svg"
                                     alt="Parent Student Teacher Review Quote Icon"
                                     title="Parent Student Teacher Review Quote Icon, Bangalore">
                                 <p>We are grateful to Swaminarayan Gurukul for maintaining cultural heritage of our
@@ -1365,7 +1405,7 @@
                                     times.</p>
                             </div>
                             <div class="reviews-profile">
-                                <div class="r-profile-img"> <img decoding="async" src="images/suryanarayan-raju.gif"
+                                <div class="r-profile-img"> <img decoding="async" src="assets/img/branch/suryanarayan-raju.gif"
                                         alt="Reviews" title="Suryanarayan Raju, Bangalore"></div>
                                 <div class="r-profile-info">
                                     <p class="r-profile-name text-left">G Suryanarayana Raju</p>
@@ -1374,10 +1414,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item col-md-6 col-sm-6 col-lg-4">
+                    <div class="item col-md-6 col-sm-6 col-lg-12">
                         <div class="reviews-inner">
                             <div class="reviews-content"> <img decoding="async"
-                                    src="images/parent-student-teacher-review-quote-icon.svg"
+                                    src="assets/img/branch/parent-student-teacher-review-quote-icon.svg"
                                     alt="Parent Student Teacher Review Quote Icon"
                                     title="Parent Student Teacher Review Quote Icon, Bangalore">
                                 <p>Shree Swami Narayan Gurukul International school is the best across the country
@@ -1388,7 +1428,7 @@
                             </div>
                             <div class="reviews-profile">
                                 <div class="r-profile-img"> <img decoding="async"
-                                        src="images/gurukul-common-user-icon.png" alt="Reviews"
+                                        src="assets/img/branch/gurukul-common-user-icon.png" alt="Reviews"
                                         title="Gurukul Common User Icon, Bangalore"></div>
                                 <div class="r-profile-info">
                                     <p class="r-profile-name text-left">Madan Gowda KJ</p>
@@ -1397,10 +1437,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item col-md-6 col-sm-6 col-lg-4">
+                    <div class="item col-md-6 col-sm-6 col-lg-12">
                         <div class="reviews-inner">
                             <div class="reviews-content"> <img decoding="async"
-                                    src="images/parent-student-teacher-review-quote-icon.svg"
+                                    src="assets/img/branch/parent-student-teacher-review-quote-icon.svg"
                                     alt="Parent Student Teacher Review Quote Icon"
                                     title="Parent Student Teacher Review Quote Icon, Bangalore">
                                 <p>My son Meet studied in Hyderabad Gurukul. in 2008, and 2009. Unbelievable change
@@ -1409,7 +1449,7 @@
                                     facilities par excellence coupled with the highest moral education makes...</p>
                             </div>
                             <div class="reviews-profile">
-                                <div class="r-profile-img"> <img decoding="async" src="images/diraj-kakadia.jpg"
+                                <div class="r-profile-img"> <img decoding="async" src="assets/img/branch/diraj-kakadia.jpg"
                                         alt="Reviews" title="Diraj Kakadia, Bangalore"></div>
                                 <div class="r-profile-info">
                                     <p class="r-profile-name text-left">Dr. Dhiraj Kakadia</p>
@@ -1419,10 +1459,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item col-md-6 col-sm-6 col-lg-4">
+                    <div class="item col-md-6 col-sm-6 col-lg-12">
                         <div class="reviews-inner">
                             <div class="reviews-content"> <img decoding="async"
-                                    src="images/parent-student-teacher-review-quote-icon.svg"
+                                    src="assets/img/branch/parent-student-teacher-review-quote-icon.svg"
                                     alt="Parent Student Teacher Review Quote Icon"
                                     title="Parent Student Teacher Review Quote Icon, Bangalore">
                                 <p>To me, Gurukul is much more than a school, it’s an institution that molds entire
@@ -1432,7 +1472,7 @@
                                     is informed...</p>
                             </div>
                             <div class="reviews-profile">
-                                <div class="r-profile-img"> <img decoding="async" src="images/chinta-haresh-mehta.gif"
+                                <div class="r-profile-img"> <img decoding="async" src="assets/img/branch/chinta-haresh-mehta.gif"
                                         alt="Reviews" title="Chinta Haresh Mehta, Bangalore"></div>
                                 <div class="r-profile-info">
                                     <p class="r-profile-name text-left">Chintan Haresh Mehta</p>
@@ -1445,168 +1485,102 @@
                 </div>
             </div>
         </section>
-        <link rel="stylesheet" href="css/bootstrap-icons.min.css">
     </div>
-    <footer>
-        <!-- footer-area-start -->
-        <div class="it-footer-area it-footer-bg it-footer-style-5 black-bg pb-70"
-            data-background="assets/img/footer/bg-1-1.jpg">
-            <div class="it-footer-border">
-                <div class="container">
-                    <!-- <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-4">
-                            <div class="it-footer-top-info d-flex align-items-center it-footer-top-col-1">
-                                <div class="it-footer-top-icon">
-                                    <span><i class="fa-light fa-location-dot"></i></span>
-                                </div>
-                                <div class="it-footer-top-text">
-                                    <span>Address:</span>
-                                    <a href="#">1925 Boggess Street</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4">
-                            <div class="it-footer-top-info d-flex align-items-center it-footer-top-col-2">
-                                <div class="it-footer-top-icon">
-                                    <span><i class="fa-light fa-phone phone"></i></span>
-                                </div>
-                                <div class="it-footer-top-text">
-                                    <span>Phone:</span>
-                                    <a href="tel:00875784568">(00) 875 784 568</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4">
-                            <div
-                                class="it-footer-top-info d-flex align-items-center justify-content-md-end border-none it-footer-top-col-3">
-                                <div class="it-footer-top-icon">
-                                    <span><i class="fa-light fa-envelope"></i></span>
-                                </div>
-                                <div class="it-footer-top-text">
-                                    <span>Email:</span>
-                                    <a href="mailto:info@gmail.com">info@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+
+        <footer id="footer" class="d-footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="d-none d-md-block">
+                    <p class="bname">BANGALORE </p>
+                    <p class="branchAddress"><a class="Braddress"
+                            href="https://www.google.com/maps/place/Shree+Swaminarayan+Gurukul+International+School/@12.8656638,77.4368928,15z/data=!4m12!1m6!3m5!1s0x0:0x38043207fe094684!2sShree+Swaminarayan+Gurukul+International+School!8m2!3d12.8656638!4d77.4368928!3m4!1s0x0:0x38043207fe094684!8m2!3d12.8656638!4d77.4368928"
+                            target="_blanck">Bangalore-Mysore Road, Po. Kumbalgodu, Next to Pepsi Factory<br>Bangalore,
+                            Karnataka - 560074<br>India</a> </p>
+                    <p class="contact"><i class="bi bi-telephone" style="margin-right: 10px;"></i><a
+                            href="tel:+91 98451 95000" class="phone1">+91 98451 95000</a><br><a
+                            href="tel:+91 98458 95000" class="phone2">+91 98458 95000</a> </p>
+                    <p class="contact"> <a href="mailto:bangalore@gurukul.org" class="contact"><i class="bi bi-envelope"
+                                style="margin-right: 10px;"></i>bangalore@gurukul.org </a> </p>
                 </div>
-            </div>
-            <div class="it-footer-wrap pt-120">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-50">
-                            <div class="it-footer-widget footer-col-5">
-                                <div class="it-footer-logo pb-25">
-                                    <a href="index.html"><img src="assets/img/logo/Bharuch_Gurukul (1).png" alt=""></a>
-                                </div>
-                                <div class="it-footer-text pb-5">
-                                    <p>Explore the diverse achievements of Gurukul<br>
-                                        alumni across various professions, ranging <br>
-                                        from doctors and engineers to pilots and businessmen.</p>
-                                </div>
-                                <div class="it-footer-social">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                </div>
-                            </div>
+                <div class="d-none d-md-block">
+                    <div>
+                        <img src="assets/img/logo/Bharuch_Gurukul (1).png" class="mb-2" alt="" style="width: 130px;">
+                        <div id="primary-nav-menu" class="menu-bangalore-branch-menu-container">
+                            <ul id="menu-bangalore-branch-menu-1" class="menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14186"><a
+                                        href="https://gurukul.org/bangalore/academics/">Academics</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14188"><a
+                                        href="/bangalore/infrastructure">Infrastructure</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14190"><a
+                                        href="/bangalore/hostel">Hostel</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14189"><a
+                                        href="/bangalore/transportation">Transportation</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14895">
+                                    <a href="https://gurukul.org/category/gurukul/bangalore/">Events</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20281"><a
+                                        href="https://gurukul.org/bangalore/admissions/">Admissions</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14187"><a
+                                        href="https://gurukul.org/bangalore/contact-us/">Contact Us</a></li>
+                            </ul>
                         </div>
-                        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 mb-50">
-                            <div class="it-footer-widget footer-col-6">
-                                <h4 class="it-footer-title">our services</h4>
-                                <div class="it-footer-list">
-                                    <ul>
-                                        <li><a href="/index.html"><i class="fa-regular fa-angle-right"></i>Home</a></li>
-                                        <li><a href="/about-us.html"><i class="fa-regular fa-angle-right"></i>About
-                                                Us</a></li>
-                                        <li><a href="gallery.html"><i class="fa-regular fa-angle-right"></i>Gallery</a>
-                                        </li>
-                                        <li><a href="event.html"><i class="fa-regular fa-angle-right"></i>Events</a>
-                                        </li>
-                                        <li><a href="blog.html"><i class="fa-regular fa-angle-right"></i>Blog</a></li>
-                                        <li><a href="contact.html"><i class="fa-regular fa-angle-right"></i>Contact
-                                                Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50">
-                            <div class="it-footer-widget footer-col-4">
-                                <h4 class="it-footer-title">Gallery</h4>
-                                <div class="it-footer-gallery-box">
-                                    <div class="row gx-5">
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb mb-10">
-                                                <img src="assets/img/footer/gallery-1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb mb-10">
-                                                <img src="assets/img/footer/gallery-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4 mb-10">
-                                            <div class="it-footer-thumb">
-                                                <img src="assets/img/footer/gallery-3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb">
-                                                <img src="assets/img/footer/gallery-4.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb">
-                                                <img src="assets/img/footer/gallery-5.avif" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-4">
-                                            <div class="it-footer-thumb">
-                                                <img src="assets/img/footer/gallery-1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-8 mb-50">
-                            <div class="it-footer-widget footer-col-8">
-                                <h4 class="it-footer-title">Subscribe</h4>
-                                <div class="it-footer-input-box p-relative">
-                                    <input class="mb-20" type="email" placeholder="Enter your email:">
-                                    <button class="it-btn-white sky-bg"><span>SUBSCRIBE NOW</span></button>
-                                </div>
-                            </div>
+                    </div>
+                    <div>
+                        <h3 class="mt-3 text-white">Quick Links</h3>
+                        <div class="d-flex" style="flex-wrap: wrap;">
+                            <p><a class="dropdown-item" href="/parents/">Fees Payment</a></p>
+                            <p><a class="dropdown-item"
+                                    href="https://gurukul.org/bangalore/academics/academic-calendar/">Academic
+                                    Calendar</a></p>
+                            <p><a class="dropdown-item" href="https://gurukul.org/bangalore/daily-darshan/">Daily
+                                    Darshan</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- footer-area-end -->
-
-        <!-- copy-right area start -->
-        <div class="it-copyright-area it-copyright-height">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
-                        <div class="it-copyright-text text-center">
-                            <p class="text-center"> © Copyright 2025, All Rights<a class="text-white"
-                                    style="text-decoration: none;" href="/" target="_blank"> Narmada Gurukul CBSE Board
-                                </a>|
-                                Designed by:
-                                <a class="text-white" style="text-decoration: none;" href="https://shopnoecommerce.com/"
-                                    target="_blank">Shopno
-                                    Ecommerce</a>
-                            </p>
-                        </div>
-                    </div>
+        <div class="footer-logo text-center"> <a href="https://gurukul.org">
+            <!-- <img class="monogram"
+                    src="assets/img/logo/Bharuch_Gurukul (1).png" alt=""> -->
+                </a></div>
+        <div class="footer-loction"></div>
+        <div class="footer-loction">
+            <ul>
+                <li><a href="/why-swaminarayan-gurukul/">Why Swaminarayan Gurukul? </a></li>
+                <li><a href="/residential-life/">Life at Gurukul</a></li>
+                <li><a href="/our-branches">Our Branches</a></li>
+                <li><a href="/admissions/">Admissions</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/career">Career</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-social-midia">
+            <ul>
+                <li> <a href="https://facebook.com/gurukul.org" alt="" class="social-icons-link"> <i
+                            class="bi bi-facebook"></i> </a> </li>
+                <li> <a href="https://instagram.com/gurukul_org" alt="" class="social-icons-link"> <i
+                            class="bi bi-instagram"></i> </a> </li>
+                <li> <a href="https://youtube.com/gurukulevents" alt="" class="social-icons-link"> <i
+                            class="bi bi-youtube"></i> </a> </li>
+                <li> <a href="https://twitter.com/gurukul_org" alt="" class="social-icons-link"> <i
+                            class="bi bi-twitter-x"></i> </a> </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="copy-right">
+                <div class="d-flex align-items-center justify-content-between">
+                    <p>Copyright @ 2025. Shree Swaminarayan Gurukul. All Rights Reserved.</p>
+                    <ul>
+                        <li><a href="/terms-conditions/">Terms & Conditions</a></li>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                        <li><a href="/refund-policy/">Refund Policy</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- copy-right area end -->
-
     </footer>
+
 
     <div class="modal fade" id="BranchInfoModal" tabindex="-1" aria-labelledby="BranchInfoModalLabel" aria-hidden="true"
         style="z-index: 9999;">
@@ -1758,9 +1732,12 @@
     <script async src="//www.instagram.com/embed.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 
 
     <script src="js/jquery.min.js"></script>
@@ -1773,7 +1750,67 @@
         });
 
     </script>
-
+   <script>
+      // Replace thumbnail with actual YouTube iframe on click
+      document.addEventListener("DOMContentLoaded", function () {
+         var videos = document.querySelectorAll(".youtube");
+         videos.forEach(function (video) {
+            video.addEventListener("click", function () {
+               var iframe = document.createElement("iframe");
+               iframe.setAttribute(
+                  "src",
+                  "https://www.youtube.com/embed/" + this.dataset.embed + "?autoplay=1&rel=0"
+               );
+               iframe.setAttribute("frameborder", "0");
+               iframe.setAttribute("allowfullscreen", "1");
+               iframe.style.width = "100%";
+               iframe.style.height = "100%";
+               this.innerHTML = "";
+               this.appendChild(iframe);
+            });
+         });
+      });
+   </script>
+   <script>
+$(document).ready(function () {
+    $('.reviews-slider').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        navText: [
+            "<span class='owl-prev-custom'>&larr;</span>",
+            "<span class='owl-next-custom'>&rarr;</span>"
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            }
+        }
+    });
+});
+</script>
+<script>
+const bannerCarousel = document.querySelector('#homeBannerSlider');
+new bootstrap.Carousel(bannerCarousel, {
+    interval: 5000,
+    ride: 'carousel',
+    pause: false,
+    touch: true
+});
+</script>
 </body>
 
 
