@@ -16801,7 +16801,7 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
 
 .value-system-body {
   width: 100%;
-  height: 50vh;
+  height: 550px;
   overflow: auto;
   transition: all 0.3s ease-in-out;
 
@@ -19557,7 +19557,7 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
   font-weight: 550;
   font-size: 24px;
   line-height: 36px;
-  margin: 20px 0
+  margin: 10px 0
 }
 
 .icon-div .left-icon img {
@@ -21894,7 +21894,7 @@ li.has-dropdown:hover>a.text-white::after {
   font-weight: 550;
   font-size: 24px;
   line-height: 36px;
-  margin: 20px 0
+  margin: 10px 0
 }
 
 .icon-div .left-icon img {
@@ -21947,9 +21947,13 @@ li.has-dropdown:hover>a.text-white::after {
 .footer-notes .btn:hover {
   background-color: var(--color-default);
 }
-
+.d-footer{
+   padding: 70px 0 0;
+  background-color: rgb(0 0 0 / 90%);
+  color: #fff;
+}
 footer {
-  padding: 70px 0 0;
+  /* padding: 50px 0 0; */
   background-color: rgb(0 0 0 / 90%);
   color: #fff;
 }
