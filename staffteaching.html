@@ -63,10 +63,39 @@
                <img src="assets/img/logo/Gurukul_International_School_Logo.png" alt="">
             </a>
          </div>
-         <div class="itoffcanvas__text">
-            <p>Suspendisse interdum consectetur libero id. Fermentum leo vel orci porta non. Euismod viverra nibh
-               cras pulvinar suspen.</p>
+         <!-- Mobile Top Header Menu -->
+         <div class="mobile-top-menu">
+            <h4 class="mobile-menu-title">Quick Links</h4>
+            <nav class="mobile-top-nav">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="parents.html">Parents</a></li>
+                  <li><a href="alumni.html">Alumni</a></li>
+                  <li><a href="#">Contributions</a></li>
+                  <li class="has-dropdown">
+                     <a href="#">Our Branches <i class="fa-solid fa-chevron-down"></i></a>
+                     <ul class="mobile-submenu">
+                        <li><a href="bharuch.html">Bharuch</a></li>
+                     </ul>
+                  </li>
+                  <li class="has-dropdown">
+                     <a href="#">CBSE <i class="fa-solid fa-chevron-down"></i></a>
+                     <ul class="mobile-submenu">
+                        <li><a href="general-information.html">General Information</a></li>
+                        <li><a href="documents-and-information.html">Documents and Information</a></li>
+                        <li><a href="result-and-academics.html">Result & Academics</a></li>
+                        <li><a href="staffteaching.html">Staff Teaching</a></li>
+                        <li><a href="school-infrastructure.html">School Infrastructure</a></li>
+                        <li><a href="assets/img/pdf/Mandatory-1.pdf" target="_blank">Mandatory Disclosure 1</a></li>
+                        <li><a href="assets/img/pdf/mandatory-disclosure-2.pdf" target="_blank">Mandatory Disclosure
+                              2</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">Downloads</a></li>
+               </ul>
+            </nav>
          </div>
+         <hr class="mobile-menu-divider">
          <div class="it-menu-mobile"></div>
          <div class="itoffcanvas__info">
             <h3 class="offcanva-title">Get In Touch</h3>
@@ -584,7 +613,29 @@
       });
    </script>
 
+  <!-- Mobile Menu Dropdown Toggle Script -->
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         // Mobile top menu dropdown toggle
+         var mobileDropdowns = document.querySelectorAll('.mobile-top-nav .has-dropdown > a');
 
+         mobileDropdowns.forEach(function (dropdown) {
+            dropdown.addEventListener('click', function (e) {
+               e.preventDefault();
+               var parent = this.parentElement;
+               var submenu = parent.querySelector('.mobile-submenu');
+
+               // Toggle active class
+               parent.classList.toggle('active');
+
+               // Toggle submenu visibility
+               if (submenu) {
+                  submenu.classList.toggle('show');
+               }
+            });
+         });
+      });
+   </script>   
 
 </body>
 

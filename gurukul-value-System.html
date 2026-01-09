@@ -35,10 +35,9 @@
 
    <!-- preloader -->
    <div id="preloader">
-      <div class="loader-content">
-         <div class="loader-logo">
-            <img src="assets/img/logo/Gurukul_International_School_Logo.png" alt="School Logo">
-         </div>
+      <div class="preloader">
+         <span></span>
+         <span></span>
       </div>
    </div>
    <!-- preloader end  -->
@@ -58,8 +57,8 @@
             <button class="close-btn"><i class="fal fa-times"></i></button>
          </div>
          <div class="itoffcanvas__logo">
-            <a href="index.html">
-               <img src="assets/img/logo/Gurukul_International_School_Logo.png" alt="">
+            <a href="index-2.html">
+               <img src="assets/img/logo/logo-white.png" alt="">
             </a>
          </div>
          <div class="itoffcanvas__text">
@@ -102,7 +101,6 @@
    </div>
    <div class="body-overlay"></div>
    <!-- it-offcanvus-area-end -->
-
    <header class="it-header-height">
 
       <!-- header-top-area-start -->
@@ -422,7 +420,7 @@
          <p class="title">|| सा विद्या या विमुक्तये ||</p>
          <p class="description">Knowledge is one that liberates</p>
       </div>
-      <section class="value-system-body h-70 p-0">
+      <section class="value-system-body p-0">
          <section class="value-system-info p-0">
             <div class="value-system visible-chields">
                <div class="main-card"> <img decoding="async" src="assets//img/hero/GurukulBrochure.png"  alt=""
@@ -1268,6 +1266,29 @@
          var scrollLeft = (sectionWidth - windowWidth) / 2;
          $('.value-system-body').animate({ scrollLeft: scrollLeft }, 'medium');
       });</script>
+        <!-- Mobile Menu Dropdown Toggle Script -->
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         // Mobile top menu dropdown toggle
+         var mobileDropdowns = document.querySelectorAll('.mobile-top-nav .has-dropdown > a');
+
+         mobileDropdowns.forEach(function (dropdown) {
+            dropdown.addEventListener('click', function (e) {
+               e.preventDefault();
+               var parent = this.parentElement;
+               var submenu = parent.querySelector('.mobile-submenu');
+
+               // Toggle active class
+               parent.classList.toggle('active');
+
+               // Toggle submenu visibility
+               if (submenu) {
+                  submenu.classList.toggle('show');
+               }
+            });
+         });
+      });
+   </script>   
 </body>
 
 

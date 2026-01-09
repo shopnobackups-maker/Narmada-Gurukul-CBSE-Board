@@ -32,13 +32,11 @@
 </head>
 
 <body>
-
    <!-- preloader -->
    <div id="preloader">
-      <div class="loader-content">
-         <div class="loader-logo">
-            <img src="assets/img/logo/Gurukul_International_School_Logo.png" alt="School Logo">
-         </div>
+      <div class="preloader">
+         <span></span>
+         <span></span>
       </div>
    </div>
    <!-- preloader end  -->
@@ -102,7 +100,6 @@
    </div>
    <div class="body-overlay"></div>
    <!-- it-offcanvus-area-end -->
-
    <header class="it-header-height">
 
       <!-- header-top-area-start -->
@@ -279,7 +276,6 @@
       <!-- header-area-end -->
 
    </header>
-
    <main>
 
       <!-- breadcrumb-area-start -->
@@ -554,7 +550,29 @@
    <script src="assets/js/main.js"></script>
 
 
+  <!-- Mobile Menu Dropdown Toggle Script -->
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         // Mobile top menu dropdown toggle
+         var mobileDropdowns = document.querySelectorAll('.mobile-top-nav .has-dropdown > a');
 
+         mobileDropdowns.forEach(function (dropdown) {
+            dropdown.addEventListener('click', function (e) {
+               e.preventDefault();
+               var parent = this.parentElement;
+               var submenu = parent.querySelector('.mobile-submenu');
+
+               // Toggle active class
+               parent.classList.toggle('active');
+
+               // Toggle submenu visibility
+               if (submenu) {
+                  submenu.classList.toggle('show');
+               }
+            });
+         });
+      });
+   </script>   
 </body>
 
 

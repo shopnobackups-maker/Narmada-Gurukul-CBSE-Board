@@ -27,8 +27,6 @@
 </head>
 
 <body>
-
-    <!-- preloader -->
     <div id="preloader">
         <div class="loader-content">
             <div class="loader-logo">
@@ -54,13 +52,44 @@
             </div>
             <div class="itoffcanvas__logo">
                 <a href="index.html">
-                    <img src="assets/img/logo/logo-white.png" alt="">
+                    <img src="assets/img/logo/Gurukul_International_School_Logo.png" alt="">
                 </a>
             </div>
-            <div class="itoffcanvas__text">
-                <p>Suspendisse interdum consectetur libero id. Fermentum leo vel orci porta non. Euismod viverra nibh
-                    cras pulvinar suspen.</p>
+            <!-- Mobile Top Header Menu -->
+            <div class="mobile-top-menu">
+                <h4 class="mobile-menu-title">Quick Links</h4>
+                <nav class="mobile-top-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="parents.html">Parents</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                        <li><a href="#">Contributions</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Our Branches <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="mobile-submenu">
+                                <li><a href="bharuch.html">Bharuch</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">CBSE <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="mobile-submenu">
+                                <li><a href="general-information.html">General Information</a></li>
+                                <li><a href="documents-and-information.html">Documents and Information</a></li>
+                                <li><a href="result-and-academics.html">Result & Academics</a></li>
+                                <li><a href="staffteaching.html">Staff Teaching</a></li>
+                                <li><a href="school-infrastructure.html">School Infrastructure</a></li>
+                                <li><a href="assets/img/pdf/Mandatory-1.pdf" target="_blank">Mandatory Disclosure 1</a>
+                                </li>
+                                <li><a href="assets/img/pdf/mandatory-disclosure-2.pdf" target="_blank">Mandatory
+                                        Disclosure
+                                        2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </nav>
             </div>
+            <hr class="mobile-menu-divider">
             <div class="it-menu-mobile"></div>
             <div class="itoffcanvas__info">
                 <h3 class="offcanva-title">Get In Touch</h3>
@@ -374,10 +403,13 @@
                                             data-name="child-name"> <input size="40" id="MemberId" class="form-control"
                                                 name="MemberId" required="" type="text"
                                                 placeholder="MemberId e.g. AB3339"> </span></p>
-                                </div><input class="btn btn-primary w-100" type="submit" value="Make Fee Payment">
+                                </div>
+                               <div class="btn-alumni">
+                                 <input class="btn btn-primary w-100" type="submit" value="Make Fee Payment">
                                 <span class="description text-center d-block fs-5"> or </span>
                                 <button type="button" class="btn btn-primary w-100">
                                     Quick Pay With UPI </button>
+                               </div>
                             </form>
 
                         </div>
@@ -443,7 +475,7 @@
                     <div class="booking-form-info bg-transparent about-content p-0">
                         <h3 class="heading">Refer Someone</h3>
                         <h4 class="sub-title">Dear Parents,</h4>
-                        <p class="description">At Shree Swaminarayan Gurukul International School, were dedicated to
+                        <p class="description">At Shree Swaminarayan Gurukul International School, were dedicated to
                             providing modern education infused with ancient values, enriching the lives of our students
                             and shaping their futures. If you know someone who would benefit from our unique approach to
                             education, rooted in Indian culture and values, we invite you to share their information
@@ -636,7 +668,29 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/magnific-popup.js"></script>
+    <!-- Mobile Menu Dropdown Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile top menu dropdown toggle
+            var mobileDropdowns = document.querySelectorAll('.mobile-top-nav .has-dropdown > a');
 
+            mobileDropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var parent = this.parentElement;
+                    var submenu = parent.querySelector('.mobile-submenu');
+
+                    // Toggle active class
+                    parent.classList.toggle('active');
+
+                    // Toggle submenu visibility
+                    if (submenu) {
+                        submenu.classList.toggle('show');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
