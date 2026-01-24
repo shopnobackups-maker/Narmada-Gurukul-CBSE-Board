@@ -22626,3 +22626,12 @@ footer {
         height: 450px;
     }
 }
+
+@media(max-width:991px){
+    .footer-links  div {
+        border-right: none !important;
+    }
+    .footer-links {
+        display: block;
+    }
+}
