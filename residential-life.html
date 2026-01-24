@@ -30,7 +30,37 @@
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <style>
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .residential-slider-item {
+                min-height: 600px !important;
+            }
+        }
+        @media (min-width: 577px) and (max-width: 991px) {
+            .residential-slider-item.value-cards {
+                min-height: 500px !important;
+            }
+            .adv-section:after {
+                background-color: transparent !important;
+            }
+        }
+        @media (min-width: 577px) and (max-width: 991px) {
+            .residential-slider-item.value-cards {
+                min-height: 600px !important;
+            }
+            .adv-section:after {
+                background-color: transparent !important;
+            }
+        }
+        @media (max-width: 576px) {
+            .residential-slider-item.value-cards {
+                min-height: 400px !important;
+            }
+            .adv-section:after {
+                background-color: transparent !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
