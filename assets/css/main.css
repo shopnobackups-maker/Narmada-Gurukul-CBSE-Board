@@ -545,7 +545,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
             font-size: 14px !important;
         line-height: 0px;
         padding: 20px !important;
-        margin-top: 20px !important;
+        margin-top: 20px;
   }
 }
 
@@ -18767,6 +18767,7 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
 
 .TFArrow1:hover {
   background: #b81419;
+  color: #ffffff;
 }
 
 /* .banner-content {
