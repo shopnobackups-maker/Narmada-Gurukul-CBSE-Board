@@ -18769,6 +18769,56 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
   background: #b81419;
   color: #ffffff;
 }
+.reflection-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.reflection-box {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.reflection-box h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.reflection-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reflection-points li {
+    background: #ffffff;
+    margin-bottom: 18px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.reflection-points li:hover {
+    transform: translateY(-4px);
+}
+
+.reflection-points span {
+    background: #42aeb0;
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: 14px;
+}
 
 /* .banner-content {
   position: absolute;
