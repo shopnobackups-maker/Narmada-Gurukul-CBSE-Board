@@ -16224,11 +16224,11 @@ input[type=radio] {
   margin: 0;
 }
 
-.highlight-card-alumni .title {
+/* .highlight-card-alumni .title {
   color: #222;
   font-size: 15px;
   margin-top: 6px;
-}
+} */
 
 /* ===== Swiper ===== */
 .swiper {
@@ -16852,7 +16852,34 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
   }
 }
 
+.alumni-highlight-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
 
+.highlight-card-alumni{
+    /* display:flex; */
+    align-items:center;
+    gap:15px;
+    padding:20px;
+    border-radius:10px;
+    background:#fff;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.highlight-card-alumni img{
+    width:40px;
+}
+
+.count{
+    font-size:22px;
+    font-weight:700;
+}
+
+.title{
+    font-size:14px;
+}
 .value-system-body {
   width: 100%;
   height: 100%;
