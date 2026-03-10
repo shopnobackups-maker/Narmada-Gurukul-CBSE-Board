@@ -3464,9 +3464,14 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .it-footer-logo a img {
-  width: 350px;
+  width: 250px;
 }
-
+.menu-bangalore-branch-menu-container ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  flex-direction: column;
+}
 @media (max-width: 767px) {
   .it-header-3-top .it-header-2-top-social::after {
     display: none;
@@ -8842,7 +8847,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .it-testimonial-5-content p {
   color: var(--it-common-white);
 }
-
+.it-testimonial-5-wrapper{
+  overflow: hidden;
+}
 .it-testimonial-5-item-wrap .it-testimonial-3-author-box {
   padding-left: 235px;
 }
@@ -16359,7 +16366,7 @@ section.residential-slider-section .h2-common {
 }
 
 .banner-section {
-  height: 85vh;
+  height:570px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -17243,7 +17250,7 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
             }
 
             &>.last-childs-2 {
-              right: -4px;
+              right: -13px;
               bottom: 133%;
 
               &::after {
@@ -18495,7 +18502,7 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
 
 .personalitySwiper {
   padding-bottom: 60px !important;
-  /* overflow: visible !important; */
+  overflow: hidden !important;
 }
 
 @media (max-width:1200px) {
