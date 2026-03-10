@@ -29,6 +29,8 @@
    <link rel="stylesheet" href="assets/css/magnific-popup.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/main.css">
+
+
 </head>
 
 <body>
@@ -189,7 +191,7 @@
                      <div class="it-header-2-main-menu">
                         <nav class="it-menu-content">
                            <ul>
-                               <li><a href="index.html">Home</a></li>
+                              <li><a href="index.html">Home</a></li>
                               <li class="has-dropdown">
                                  <a href="#">Why Swaminarayan Gurukul ?</a>
                                  <ul class="it-submenu submenu">
@@ -201,15 +203,15 @@
                                  </ul>
                               </li>
                               <!-- <li><a href="about-us.html">about us</a></li> -->
-                              
-                               <!-- <li><a href="#" class="">Contributions</a></li> -->
-                           <li class="has-dropdown">
-                              <a href="#" class="">Our Branches</a>
-                              <ul class="it-submenu submenu">
-                                 <li><a href="bharuch.html">Bharuch</a></li>
-                              </ul>
-                           </li>
-                           <!-- <li class="has-dropdown">
+
+                              <!-- <li><a href="#" class="">Contributions</a></li> -->
+                              <li class="has-dropdown">
+                                 <a href="#" class="">Our Branches</a>
+                                 <ul class="it-submenu submenu">
+                                    <li><a href="bharuch.html">Bharuch</a></li>
+                                 </ul>
+                              </li>
+                              <!-- <li class="has-dropdown">
                               <a href="#" class="">CBSE</a>
                               <ul class="it-submenu submenu">
                                  <li><a href="general-information.html">General Information</a></li>
@@ -223,9 +225,9 @@
                                        Disclosure 2</a></li>
                               </ul>
                            </li> -->
-                           <li><a href="gallery.html">Gallery</a></li>
+                              <li><a href="gallery.html">Gallery</a></li>
                               <li><a href="event.html">Event</a></li>
-                           <!-- <li><a href="#" class="">Downloads</a></li> -->
+                              <!-- <li><a href="#" class="">Downloads</a></li> -->
                               <!-- <li class="has-dropdown">
                                  <a href="services-1.html">services</a>
                                  <ul class="it-submenu submenu">
@@ -459,23 +461,23 @@
                   <div class="info-box">
                      <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
                      <h5>Mail us 24/7</h5>
-                     <p><a href="mailto:info@yourmail.com">info@yourmail.com</a></p>
-                     <p><a href="mailto:support@yourmail.com">support@yourmail.com</a></p>
+                     <p><a href="mailto:Bharuch@sgrs.school">Bharuch@sgrs.school</a></p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="info-box">
                      <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
                      <h5>Our Location</h5>
-                     <p>47 Bakery Street, London, UK fort 061019</p>
+                     <p><a class="Braddress"
+                            href="https://maps.app.goo.gl/t4CwD5qihpjvdgMV9?g_st=awb" target="_blanck">NH-48, Mulad
+                            Chowk, Mandwa-39300, Bharuch, Gujarat.</a></p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="info-box">
                      <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
                      <h5>Call us Anytime</h5>
-                     <p><a href="tel:+1194123456789">+1 (194)-123-456-789</a></p>
-                     <p><a href="tel:+161012345678">+1 (610)-123-456-780</a></p>
+                     <p><a href="tel:+91 9000 300 580">+91 9000 300 580</a></p>
                   </div>
                </div>
             </div>
@@ -489,26 +491,27 @@
                      <p class="mb-4">Need help or information? Send us a message, and our team will reach out within 24
                         hours.</p>
 
-                     <form action="#" method="post">
+                     <form id="contact-form">
                         <div class="row">
                            <div class="col-md-6 mb-3">
-                              <input type="text" class="form-control" placeholder="Your Name" required>
+                              <input type="text" class="form-control" placeholder="Your Name" required name="firstname">
                            </div>
                            <div class="col-md-6 mb-3">
-                              <input type="email" class="form-control" placeholder="Email Address" required>
+                              <input type="email" class="form-control" placeholder="Email Address" required name="email">
                            </div>
                            <div class="col-md-6 mb-3">
-                              <input type="text" class="form-control" placeholder="Phone Number">
+                              <input type="text" class="form-control" placeholder="Phone Number" name="phone" required>
                            </div>
                            <div class="col-md-6 mb-3">
-                              <input type="text" class="form-control" placeholder="Subject">
+                              <input type="text" class="form-control" placeholder="Subject" name="subject" required>
                            </div>
                            <div class="col-12 mb-4">
-                              <textarea class="form-control" rows="5" placeholder="How can we help you?"></textarea>
+                              <textarea class="form-control" rows="5" placeholder="How can we help you?"
+                                 name="message" required></textarea>
                            </div>
                            <div class=" d-none d-lg-block col-12">
-                              <a class="it-btn-white sky-bg" href="contact.html">
-                                 <span>
+                              <a class="it-btn-white sky-bg" href="#">
+                                 <button type="submit">
                                     Contact Us
                                     <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                        xmlns="http://www.w3.org/2000/svg">
@@ -518,7 +521,7 @@
                                        <path d="M1 7.24023H16" stroke="currentcolor" stroke-width="1.5"
                                           stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                 </span>
+                                 </button>
                               </a>
                            </div>
                         </div>
@@ -546,10 +549,7 @@
          </div>
       </section>
       <section>
-         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22904.498150943797!2d72.9974693266917!3d21.728400022156247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be02098a1fc2207%3A0xcd55dce37e303859!2sJay%20Ambe%20International%20School!5e1!3m2!1sen!2sin!4v1762514463615!5m2!1sen!2sin"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4455.617865451834!2d73.0644647!3d21.687845799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84ae8db34793dd9d%3A0x9d6cf58978ca52ef!2sShree%20Swaminarayan%20Gurukul-Bharuch!5e1!3m2!1sen!2sin!4v1773133762697!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <!-- Contact Section End -->
    </main>
@@ -612,9 +612,12 @@
                               alumni across various professions, ranging <br>
                               from doctors and engineers to pilots and businessmen.</p>
                         </div>
-                           <div class="it-footer-social">
-                           <a href="https://www.facebook.com/share/1HjpZ8FCLU/"><i class="fa-brands fa-facebook-f"></i></a>
-                           <a href="https://www.instagram.com/bharuchgurukul?igsh=MWR2anVpc3ljcGp5Mw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                        <div class="it-footer-social">
+                           <a href="https://www.facebook.com/share/1HjpZ8FCLU/"><i
+                                 class="fa-brands fa-facebook-f"></i></a>
+                           <a
+                              href="https://www.instagram.com/bharuchgurukul?igsh=MWR2anVpc3ljcGp5Mw%3D%3D&utm_source=qr"><i
+                                 class="fa-brands fa-instagram"></i></a>
                            <a href="https://www.youtube.com/@BharuchGurukul"><i class="fa-brands fa-youtube"></i></a>
                            <a href="https://x.com/BharuchGurukul"><i class="fa-brands fa-twitter"></i></a>
                         </div>
@@ -710,6 +713,7 @@
       <!-- copy-right area end -->
 
    </footer>
+   
 
 
    <!-- JS here -->
@@ -726,8 +730,48 @@
    <script src="assets/js/imagesloaded-pkgd.js"></script>
    <script src="assets/js/ajax-form.js"></script>
    <script src="assets/js/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <!-- Mobile Menu Dropdown Toggle Script -->
+   <script>
+        emailjs.init({
+            publicKey: "le5V2ZtMNxHhIINZT"
+        });
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            const params = {
+                firstname: document.querySelector('[name="firstname"]').value,
+                email: document.querySelector('[name="email"]').value,
+                phone: document.querySelector('[name="phone"]').value,
+                subject: document.querySelector('[name="subject"]').value,
+                message: document.querySelector('[name="message"]').value,
+            };
+
+            emailjs.send(
+                "service_n5abbti",
+                "template_6jsqikm",
+                params
+            )
+                .then(function (response) {
+
+                    alert("Email sent successfully");
+                    document.getElementById("contact-form").reset();
+
+                })
+                .catch(function (error) {
+
+                    console.log(error);
+                    alert("Error: " + error.text);
+
+                });
+        });
+    </script>
+
+  
+
+  
+   <!-- Mobile Menu Dropdown Toggle Script -->
    <script>
       document.addEventListener('DOMContentLoaded', function () {
          // Mobile top menu dropdown toggle
@@ -749,7 +793,7 @@
             });
          });
       });
-   </script>   
+   </script>
 
 </body>
 
