@@ -14221,7 +14221,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*  16. footer css start
 /*----------------------------------------*/
 .it-footer-bg {
-  background-image: url("/assets/img/hero/footer_bg.png");
+  background-image: url("/assets/img/hero/footer_bg_1.png");
   background-repeat: no-repeat;
   background-size: cover;
       background-color: #1a0d102f;
@@ -16367,7 +16367,7 @@ section.residential-slider-section .h2-common {
 }
 
 .banner-section {
-  height:570px;
+  height:620px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -22381,7 +22381,7 @@ li.has-dropdown:hover>a.text-white::after {
 
 footer {
   /* padding: 50px 0 0; */
-  background-color: rgb(0 0 0 / 90%);
+      background-color: rgb(0 0 0 / 85%);
   color: #fff;
 }
 
