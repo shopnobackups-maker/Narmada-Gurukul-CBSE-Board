@@ -2403,7 +2403,7 @@
                             </div>
   <div class=" d-none d-lg-block col-12">
                         <button type="submit" class="it-btn-white sky-bg">
-                            Contact Us
+                            Apply Now
                         </button>
                     </div>
                     <!-- <input class="btn btn-warning btn-lg w-100" name="gbase-crm-submit" type="submit"
@@ -2416,64 +2416,7 @@
                     </form>
                </div>
             </div>
-            <script>var modalRecaptchaWidget, pageRecaptchaWidget, thirdRecaptchaWidget, fourthRecaptchaWidget;
-               function onloadRecaptcha() {
-                  console.log("Executing onloadRecaptcha...");
-                  if (document.getElementById('modalRecaptcha') && !modalRecaptchaWidget) {
-                     modalRecaptchaWidget = grecaptcha.render('modalRecaptcha', {
-                        'sitekey': '6LfuUO0qAAAAAJenwXRnJ-thB7pl0eGHTopJ9Mei'
-                     });
-                     console.log("Modal reCAPTCHA Initialized:", modalRecaptchaWidget);
-                  }
-                  if (document.getElementById('pageRecaptcha1') && !pageRecaptchaWidget) {
-                     pageRecaptchaWidget = grecaptcha.render('pageRecaptcha1', {
-                        'sitekey': '6LfuUO0qAAAAAJenwXRnJ-thB7pl0eGHTopJ9Mei'
-                     });
-                     console.log("Page reCAPTCHA Initialized:", pageRecaptchaWidget);
-                  }
-                  if (document.getElementById('thirdRecaptcha') && !thirdRecaptchaWidget) {
-                     thirdRecaptchaWidget = grecaptcha.render('thirdRecaptcha', {
-                        'sitekey': '6LfuUO0qAAAAAJenwXRnJ-thB7pl0eGHTopJ9Mei'
-                     });
-                     console.log("Third reCAPTCHA Initialized:", thirdRecaptchaWidget);
-                  }
-                  if (document.getElementById('fourthRecaptcha') && !fourthRecaptchaWidget) {
-                     fourthRecaptchaWidget = grecaptcha.render('fourthRecaptcha', {
-                        'sitekey': '6LfuUO0qAAAAAJenwXRnJ-thB7pl0eGHTopJ9Mei'
-                     });
-                     console.log("Fourth reCAPTCHA Initialized:", fourthRecaptchaWidget);
-                  }
-               }
-               document.addEventListener("DOMContentLoaded", function () {
-                  if (typeof grecaptcha !== "undefined") {
-                     onloadRecaptcha();
-                  } else {
-                     console.error("Google reCAPTCHA script failed to load.");
-                  }
-               });
-               function handleFormSubmission(formId, recaptchaWidget, recaptchaTokenId) {
-                  var form = document.getElementById(formId);
-                  if (!form) {
-                     console.error("Form not found:", formId);
-                     return;
-                  }
-                  form.addEventListener("submit", function (event) {
-                     var recaptchaResponse = grecaptcha.getResponse(recaptchaWidget);
-                     console.log(formId + " - reCAPTCHA Response:", recaptchaResponse);
-                     document.getElementById(recaptchaTokenId).value = recaptchaResponse;
-                     setTimeout(() => {
-                        grecaptcha.reset(recaptchaWidget);
-                     }, 1000);
-                  });
-               }
-               document.addEventListener("DOMContentLoaded", function () {
-                  handleFormSubmission("modalAdmissionForm", modalRecaptchaWidget, "modalRecaptchaToken");
-                  handleFormSubmission("admissionForm1", pageRecaptchaWidget, "recaptchaToken");
-                  handleFormSubmission("thirdAdmissionForm", thirdRecaptchaWidget, "thirdRecaptchaToken");
-                  handleFormSubmission("fourthAdmissionForm", fourthRecaptchaWidget, "fourthRecaptchaToken");
-               });</script>
-            <script src="js/api.js" async="" defer="">
-            </script>
+           
             <script src="js/g3kl7_1.js"></script>
             <script src="js/masonry.pkgd.min.js" crossorigin="anonymous" async="">
             </script>

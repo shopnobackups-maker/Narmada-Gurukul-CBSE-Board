@@ -15840,6 +15840,7 @@ input[type=radio] {
   display: inline-block;
   transition: 0.3s;
   margin: 0px;
+  width: 100%;
 }
 
 .it-btn-white.sky-bg:hover {
