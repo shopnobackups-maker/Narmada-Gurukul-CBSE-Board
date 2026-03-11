@@ -2359,57 +2359,61 @@
                <div class="booking-form py-3 pt-3 bg-transparent">
                   <h3 class="h4-common">Book a campus visit today</h3>
                   <p>Only for Boy Child</p>
-                  <form class="gbase-crm-form" id="modalAdmissionForm" action="#">
-                     <div class="form-group contact-item">
-                        <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap"> <input type="text"
-                                 name="gbase-crm-name" placeholder="Child Name" required></span>
-                        </p>
-                     </div>
-                     <div class="form-group contact-item">
-                        <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap"> <input type="tel"
-                                 name="gbase-crm-mobile" placeholder="Mobile*" required></span>
-                        </p>
-                     </div>
-                     <div class="form-group contact-item">
-                        <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap"> <select
-                                 name="gbase-crm-branch" required>
-                                 <option value="Bharuch" selected>Bharuch (CBSE International School)</option>
-                              </select></span></p>
-                     </div>
-                     <div class="form-group contact-item">
-                        <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap"> <select
-                                 name="gbase-crm-standard" required>
-                                 <option value="">Select Standard</option>
-                                 <option value="1">Standard 1</option>
-                                 <option value="2">Standard 2</option>
-                                 <option value="3">Standard 3</option>
-                                 <option value="4">Standard 4</option>
-                                 <option value="5">Standard 5</option>
-                                 <option value="6">Standard 6</option>
-                                 <option value="7">Standard 7</option>
-                                 <option value="8">Standard 8</option>
-                                 <option value="9">Standard 9</option>
-                              </select></span></p>
-                     </div>
-                     <div class="form-group contact-item">
-                        <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap"> <select
-                                 name="gbase-crm-package" required>
-                                 <option value="">Select Package</option>
-                                 <option value="Day School">Day School</option>
-                                 <option value="Residential">Residential</option>
-                              </select></span></p>
-                     </div>
-                     <div class="form-group text-center" style="width: 100%; margin-bottom: 20px;">
-                        <div class="g-recaptcha" id="modalRecaptcha"
-                           data-sitekey="6LfuUO0qAAAAAJenwXRnJ-thB7pl0eGHTopJ9Mei"
-                           style="display: flex; justify-content: start;"></div>
-                     </div><input type="hidden" name="recaptcha_token" id="modalRecaptchaToken">
-                     <input class="btn btn-warning btn-lg w-100" name="gbase-crm-submit" type="submit"
-                        value="Apply Now">
-                     <!-- <div class="form-group pt-2">
+                    <form class="gbase-crm-form" id="modalAdmissionForm">
+                            <div class="form-group contact-item">
+                                <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap">
+                                        <input type="text" name="child_name" id="child_name" placeholder="Child Name" required>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="form-group contact-item">
+                                <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap">
+                                        <input type="tel" name="mobile" placeholder="Mobile*" required></span>
+                                </p>
+                            </div>
+                            <div class="form-group contact-item">
+                                <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap"> <select
+                                            name="branch" required>
+                                            <option value="" selected>Bharuch (CBSE International School)
+                                            </option>
+                                        </select></span></p>
+                            </div>
+                            <div class="form-group contact-item">
+                                <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap"> 
+                                    <select name="standard" required>
+                                            <option value="">Select Standard</option>
+                                            <option value="1"> 1</option>
+                                            <option value="2"> 2</option>
+                                            <option value="3"> 3</option>
+                                            <option value="4"> 4</option>
+                                            <option value="5"> 5</option>
+                                            <option value="6"> 6</option>
+                                            <option value="7"> 7</option>
+                                            <option value="8"> 8</option>
+                                            <option value="9"> 9</option>
+                                        </select></span></p>
+                            </div>
+                            <div class="form-group contact-item">
+                                <p><i class="bi bi-person-fill"></i> <span class="wpcf7-form-control-wrap"> 
+                                    <select name="package" required>
+                                            <option value="">Select Package</option>
+                                            <option value="Day School">Day School</option>
+                                            <option value="Residential">Residential</option>
+                                        </select></span></p>
+                            </div>
+  <div class=" d-none d-lg-block col-12">
+                        <button type="submit" class="it-btn-white sky-bg">
+                            Contact Us
+                        </button>
+                    </div>
+                    <!-- <input class="btn btn-warning btn-lg w-100" name="gbase-crm-submit" type="submit"
+                                value="Apply Now"> -->
+                  
+                    </div>
+                    <!-- <div class="form-group pt-2">
                                 <div class="gbase-crm-response alert alert-success" role="alert"></div>
                             </div> -->
-                  </form>
+                    </form>
                </div>
             </div>
             <script>var modalRecaptchaWidget, pageRecaptchaWidget, thirdRecaptchaWidget, fourthRecaptchaWidget;
@@ -2564,6 +2568,7 @@
          document.body.classList.add("loaded");
       });
    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
    <!-- ============== Swiper JS Initialization ============== -->
    <!-- <script>
@@ -2711,7 +2716,55 @@
          });
       });
    </script>
+  <script>
+        emailjs.init({
+            publicKey: "le5V2ZtMNxHhIINZT"
+        });
 
+        
+        document.getElementById("modalAdmissionForm").addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            // const params = {
+                // child_name: document.querySelector('[name="child_name"]').value,
+                // mobile: document.querySelector('[name="mobile"]').value,
+                // branch: document.querySelector('[name="branch"]').value,
+                // standard: document.querySelector('[name="standard"]').value,
+                // package: document.querySelector('[name="package"]').value,
+            // };
+
+            const params = {
+                child_name: e.target.elements['child_name'].value,
+                mobile: e.target.elements['mobile'].value,
+                branch: e.target.elements['branch'].value,
+                standard: e.target.elements['standard'].value,
+                package: e.target.elements['package'].value,
+            };
+
+            console.log('start');
+            console.log(params);
+            console.log('end');
+
+            emailjs.send(
+                "service_n5abbti",
+                "template_7wu7h6a",
+                params
+            )
+                .then(function (response) {
+
+                    alert("Email sent successfully");
+                    document.getElementById("modalAdmissionForm").reset();
+
+                })
+                .catch(function (error) {
+
+                    console.log(error);
+                    alert("Error: " + error.text);
+
+                });
+        });
+    </script>
 </body>
 
 
