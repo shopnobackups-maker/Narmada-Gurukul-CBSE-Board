@@ -19712,7 +19712,7 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
   background: #c90808;
   color: #fff;
   font-size: 20px;
-  padding: 14px;
+  /* padding: 14px; */
   border-radius: 6px;
   border: none;
   cursor: pointer;
