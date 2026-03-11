@@ -20022,7 +20022,7 @@ figure.side-img img {
 .side-img {
   position: relative;
   padding: 10px;
-  z-index: 1;
+  z-index: 0;
 }
 .ctm-brilliance-img{
   height: 100px;
